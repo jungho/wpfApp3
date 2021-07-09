@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3" xmlns:controls="clr-namespace:EscherGroup.EssentialCP.Client.Internal.Controls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1200" Width="800">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label>URL</Label>
+            <TextBox x:Name="URL" Width="500"></TextBox>
+        </StackPanel>
+        <Button Click="ShowBrowser">Show Browser</Button>
+        <Button Click="HideBrowser">Hide Browser</Button>
+        <Button Click="ReplaceControl">Hide Control</Button>
+        
+
+        <ContentControl x:Name="Holder" Height="950"></ContentControl>
+
+
+    </StackPanel>
+</Window>
